@@ -1,0 +1,117 @@
+/* Master Styles */
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/* Portfolio Styles */
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-6 {
+    position: relative;
+}
+
+.portfolio-item-wrapper-2 {
+    position: static;
+    display: static;
+}
+
+.portfolio-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper img {
+    opacity: 0.5;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.logo-wrapper:hover img {
+   opacity: 1.0;
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;  
+}
+
+/*Needs to be more specific with selector */
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 800;
+    color: transparent;
+    font-size: 0.9em;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 800;
+    color: black;
+}
+
+.img-darken {
+    transition: 1s;
+    opacity: 0.3;
+}
